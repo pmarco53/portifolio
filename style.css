@@ -1,0 +1,810 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+  --cor-de-fundo: #ededed;
+  --cor-de-fundo-menu: #ededed;
+  --cor-do-link: #000000;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 1.6;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--cor-de-fundo-menu);
+  width: 100%;
+  height: 56px;
+  position: absolute;
+  left: 30px;
+  top: 0;
+  justify-content: space-between;
+}
+
+.cabecalho__logo {
+  max-width: 80px; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  left: 50px;
+}
+
+.navegacao__lista li:nth-child(-n + 5) {
+  display: none; /* Aplica um fundo azul claro como exemplo */
+}
+
+.navegacao__lista li:nth-child(6) {
+  padding-right: 120px;
+  font-size: 14px;
+}
+
+.navegacao__elemento a {
+  font-size: 0.9rem;
+}
+/* ------------------------------ Seção Apresentação ------------------------------*/
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  position: absolute; /* Define o posicionamento absoluto */
+  left: 0px; /* Define a posição x */
+  top: 120px; /* Define a posição y */
+  width: 100%;
+  height: 800px;
+  padding: 30px;
+}
+
+.apresentacao__conteiner {
+  padding-left: 20px;
+  font-size: 22px;
+  width: 95%;
+  padding: 10px;
+}
+
+.apresentacao__foto {
+  width: 98px;
+  padding-left: 30px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  position: absolute;
+  left: 0px;
+}
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+.sobre-mim {
+  position: absolute;
+  left: 0px;
+  top: 900px;
+  background-color: #eaf2fd;
+  width: 100%;
+  padding: 30px;
+}
+
+.sobre-mim__texto {
+  width: 95%;
+}
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+.habilidades {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 1600px;
+  flex-direction: column;
+  width: 100%;
+  height: 244px;
+  align-items: center;
+}
+
+.habilidades__titulo {
+  padding-right: 0px;
+}
+
+.habilidades__lista {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-left: 100px;
+}
+
+.habilidades__lista li {
+  background-color: #fff; /* Define o fundo branco */
+  border: 1px solid #ccc; /* Adiciona uma borda */
+  padding: 20px; /* Espaçamento interno */
+  width: 156px; /* Define a largura dos itens */
+  height: 118px;
+  text-align: center; /* Centraliza o conteúdo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+.hobbies {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 2300px;
+  flex-direction: column;
+  width: 100%px;
+  height: 244px;
+  align-items: center;
+}
+
+.hobbies__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 100px;
+}
+
+.hobbies__lista li {
+  background-color: #fff; /* Define o fundo branco */
+  border: 1px solid #ccc; /* Adiciona uma borda */
+  padding: 20px; /* Espaçamento interno */
+  width: 156px; /* Define a largura dos itens */
+  height: 118px;
+  text-align: center; /* Centraliza o conteúdo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*------------------------------ Formação -----------------------------------------*/
+.formacao {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 3000px;
+  flex-direction: column;
+  width: 100%;
+  height: 661px;
+  background-color: #eaf2fd;
+  align-items: center;
+}
+
+.formacao__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 130px;
+}
+
+.formacao__lista li {
+  background-color: #fff; /* Define o fundo branco */
+  border: 1px solid #ccc; /* Adiciona uma borda */
+  padding: 20px; /* Espaçamento interno */
+  width: 296px; /* Define a largura dos itens */
+  height: 118px;
+  text-align: center; /* Centraliza o conteúdo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formacao__titulo {
+  padding-left: 0px;
+}
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+.projetos {
+  position: absolute;
+  left: 20px;
+  top: 3700px;
+  width: 100%;
+  height: 400px;
+}
+/*------------------------------ Seção de Contato ---------------------------------*/
+.contato {
+  position: absolute;
+  left: 0px;
+  top: 4200px;
+  background-color: #eaf2fd;
+  width: 100%;
+  height: 890px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 449px;
+}
+
+.contato__campo {
+  height: 40px;
+  width: 440px;
+}
+
+.contato__campo--textarea {
+  height: 200px;
+}
+
+.contato__botao {
+  height: 40px;
+  width: 180px;
+  background-color: blue;
+  color: #ededed;
+}
+
+form input,
+form textarea,
+form select {
+  border: none; /* Remove a borda */
+  outline: none; /* Remove o contorno ao focar no campo */
+}
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+  .cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+    width: 100%;
+    height: 56px;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    justify-content: space-between;
+  }
+
+  .cabecalho__logo {
+    max-width: 100px;
+    position: absolute;
+    left: 0px;
+  }
+
+  .cabecalho__titulo {
+    font-size: 1.2rem;
+  }
+
+  .navegacao__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  .navegacao__lista li:nth-child(-n + 5) {
+    display: none; /* Aplica um fundo azul claro como exemplo */
+  }
+
+  .navegacao__lista li:nth-child(6) {
+    margin-left: 450px;
+  }
+
+  .navegacao__elemento a {
+    font-size: 1rem;
+  }
+
+  .apresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    padding-left: 20px;
+    width: 768px;
+    height: 710px;
+  }
+
+  .apresentacao__conteiner {
+    width: 622px;
+    position: absolute;
+    height: 690px;
+  }
+
+  .apresentacao__foto {
+    width: 146px;
+    padding-left: 633px;
+    padding-bottom: 500px;
+    margin-right: 50px;
+  }
+
+  .redes {
+    white-space: nowrap;
+  }
+
+  .sobre-mim {
+    position: absolute;
+    left: 0px;
+    top: 800px;
+    background-color: #eaf2fd;
+    width: 100%;
+  }
+
+  .sobre-mim__texto {
+    padding-left: 20px;
+    width: 768px;
+  }
+
+  .sobre-mim__titulo {
+    width: 95%;
+    padding-left: 20px;
+  }
+
+  .habilidades {
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 1400px;
+    flex-direction: column;
+    width: 100%;
+    height: 244px;
+    align-items: center;
+  }
+
+  .habilidades__lista {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 768px;
+    text-align: center;
+    padding-left: 20px;
+  }
+
+  .habilidades__titulo {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .habilidades__lista li {
+    background-color: #fff; /* Define o fundo branco */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    padding: 10px; /* Espaçamento interno */
+    width: 214px; /* Define a largura dos itens */
+    height: 118px;
+    text-align: center; /* Centraliza o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hobbies {
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 1900px;
+    flex-direction: column;
+    width: 100%;
+    height: 244px;
+  }
+
+  .hobbies__lista {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 768px;
+    text-align: center;
+    padding-left: 20px;
+  }
+
+  .hobbies__titulo {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .hobbies__lista li {
+    background-color: #fff; /* Define o fundo branco */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    padding: 10px; /* Espaçamento interno */
+    width: 214px; /* Define a largura dos itens */
+    height: 118px;
+    text-align: center; /* Centraliza o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formacao {
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 2400px;
+    flex-direction: column;
+    width: 100%;
+    height: 291px;
+    background-color: #eaf2fd;
+    align-items: center;
+  }
+
+  .formacao__lista {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 768px;
+    text-align: center;
+    padding-left: 20px;
+  }
+
+  .formacao__lista li {
+    background-color: #fff; /* Define o fundo branco */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    padding: 10px; /* Espaçamento interno */
+    width: 214px; /* Define a largura dos itens */
+    height: 118px;
+    text-align: left; /* Centraliza o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formacao__icone {
+    padding-top: 150px;
+  }
+
+  .formacao__titulo {
+    padding-left: 0px;
+  }
+
+  .formacao__nome {
+    padding: 0;
+  }
+
+  .formacao__detalhe {
+    padding: 0;
+  }
+
+  .projetos {
+    position: absolute;
+    left: 0px;
+    top: 2800px;
+    width: 100%;
+    height: 400px;
+    padding-left: 0px;
+  }
+
+  .projetos__conteiner {
+    width: 768px;
+    padding-left: 100px;
+  }
+
+  .projetos__titulo {
+    padding-left: 100px;
+  }
+
+  .contato {
+    position: absolute;
+    left: 0px;
+    top: 3200px;
+    background-color: #eaf2fd;
+    width: 768px;
+    height: 890px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  .contato__titulo {
+    width: 768px;
+    padding-left: 20px;
+  }
+
+  .contato__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 768px;
+    padding-left: 40px;
+  }
+
+  .contato__campo {
+    height: 40px;
+    width: 720px;
+  }
+
+  .contato__campo--textarea {
+    height: 200px;
+  }
+
+  .contato__botao {
+    height: 40px;
+    width: 180px;
+    background-color: blue;
+    color: #ededed;
+  }
+}
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+  /* Aqui você pode ajustar ainda mais o design para telas grandes */
+  .cabecalho__titulo {
+    font-size: 1.8rem;
+  }
+
+  .navegacao__elemento a {
+    font-size: 1.1rem;
+  }
+
+  .navegacao__lista {
+    list-style-type: none;
+    padding: 0;
+    width: 642px;
+  }
+
+  .navegacao__lista li:nth-child(-n + 5) {
+    display: inline;
+  }
+
+  .navegacao__lista li:nth-child(6) {
+    margin: 0;
+  }
+
+  .navegacao__lista li:nth-child(1) {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .navegacao {
+    width: 642px;
+    padding-left: 350px;
+    padding-top: 20px;
+  }
+
+  .cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .cabecalho__titulo {
+    padding: 0;
+    margin: 0;
+  }
+
+  .apresentacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 668px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .apresentacao__conteiner {
+    width: 750px;
+    flex: 1;
+    padding-left: 200px;
+  }
+
+  .apresentacao__foto {
+    width: 368px;
+    padding-left: 950px;
+    padding-bottom: 200px;
+    padding-right: 0;
+    margin: 0;
+  }
+
+  .redes {
+    padding-left: 200px;
+  }
+
+  .sobre-mim {
+    position: absolute;
+    left: 0;
+    top: 600px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .sobre-mim__titulo {
+    padding-left: 200px;
+  }
+
+  .sobre-mim__texto {
+    padding-left: 200px;
+    width: 1136px;
+  }
+
+  .sobre-mim__assinatura {
+    padding-left: 200px;
+  }
+
+  .habilidades {
+    width: 1440px;
+    height: 244px;
+    position: absolute;
+    left: 0px;
+    top: 1100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .habilidades__lista li {
+    background-color: #fff; /* Define o fundo branco */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    padding: 10px; /* Espaçamento interno */
+    width: 176px; /* Define a largura dos itens */
+    height: 174px;
+    text-align: center; /* Centraliza o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .habilidades__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 1136px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .habilidades__titulo {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .hobbies {
+    width: 1440px;
+    height: 244px;
+    position: absolute;
+    left: 0px;
+    top: 1500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hobbies__lista li {
+    background-color: #fff; /* Define o fundo branco */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    padding: 10px; /* Espaçamento interno */
+    width: 176px; /* Define a largura dos itens */
+    height: 174px;
+    text-align: center; /* Centraliza o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hobbies__lista {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: 1136px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .hobbies__titulo {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .formacao {
+    width: 100%;
+    height: 581px;
+    position: absolute;
+    top: 1900px;
+  }
+
+  .formacao__titulo {
+    width: 1440px;
+    padding-left: 1200px;
+  }
+
+  .formacao__lista {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 347px;
+    width: 1136px;
+    padding-left: 0;
+  }
+
+  .formacao__lista li {
+    background-color: #fff; /* Define o fundo branco */
+    border: 1px solid #ccc; /* Adiciona uma borda */
+    padding: 10px; /* Espaçamento interno */
+    width: 368px; /* Define a largura dos itens */
+    height: 347px;
+    text-align: center; /* Centraliza o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projetos {
+    position: absolute;
+    top: 2500px;
+    left: 0px;
+    width: 1440px;
+    padding-left: 170px;
+  }
+
+  .projetos__titulo {
+    padding-left: 0px;
+  }
+
+  .projetos__conteiner {
+    padding-left: 0px;
+  }
+
+  .contato {
+    position: absolute;
+    left: 0px;
+    top: 2850px;
+    width: 1440px;
+    padding-left: 0px;
+  }
+
+  .contato__titulo {
+    width: 1440px;
+    padding-left: 330px;
+  }
+
+  .contato__formulario {
+    width: 1400px;
+    padding-left: 300px;
+  }
+
+  .contato__campo {
+    width: 1000px;
+  }
+}
