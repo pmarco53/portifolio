@@ -70,22 +70,23 @@ a {
   flex-direction: column;
   position: absolute; /* Define o posicionamento absoluto */
   left: 0px; /* Define a posição x */
-  top: 120px; /* Define a posição y */
+  top: 70px; /* Define a posição y */
   width: 100%;
   height: 800px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .apresentacao__conteiner {
   padding-left: 20px;
   font-size: 22px;
   width: 90%;
-  padding: 10px;
+  padding-left: 10px;
+  font-size: 14px;
 }
 
 .apresentacao__foto {
   width: 98px;
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .redes {
@@ -96,18 +97,23 @@ a {
   left: 0px;
 }
 
+.apresentacao__titulo {
+  padding: 0px;
+}
+
 /* ------------------------------ Seção Sobre mim ----------------------------------*/
 .sobre-mim {
   position: absolute;
   left: 0px;
-  top: 950px;
+  top: 600px;
   background-color: #eaf2fd;
   width: 100%;
   padding: 30px;
 }
 
 .sobre-mim__texto {
-  width: 95%;
+  width: 90%;
+  font-size: 14px;
 }
 
 /*------------------------------ Seção de Habilidades ------------------------------*/
@@ -115,11 +121,12 @@ a {
   display: flex;
   position: absolute;
   left: 0px;
-  top: 1600px;
+  top: 1200px;
   flex-direction: column;
   width: 100%;
   height: 244px;
   align-items: center;
+  padding-top: 40px;
 }
 
 .habilidades__titulo {
@@ -130,15 +137,16 @@ a {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  padding-left: 100px;
+  padding-left: 0px;
+  justify-content: center;
 }
 
 .habilidades__lista li {
   background-color: #fff; /* Define o fundo branco */
   border: 1px solid #ccc; /* Adiciona uma borda */
   padding: 20px; /* Espaçamento interno */
-  width: 156px; /* Define a largura dos itens */
-  height: 118px;
+  width: 186px; /* Define a largura dos itens */
+  height: 128px;
   text-align: center; /* Centraliza o conteúdo */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
   display: flex;
@@ -152,7 +160,7 @@ a {
   display: flex;
   position: absolute;
   left: 0px;
-  top: 2300px;
+  top: 1900px;
   flex-direction: column;
   width: 100%px;
   height: 244px;
@@ -163,15 +171,16 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  padding-left: 100px;
+  padding-left: 0px;
+  justify-content: center;
 }
 
 .hobbies__lista li {
   background-color: #fff; /* Define o fundo branco */
   border: 1px solid #ccc; /* Adiciona uma borda */
   padding: 20px; /* Espaçamento interno */
-  width: 156px; /* Define a largura dos itens */
-  height: 118px;
+  width: 186px; /* Define a largura dos itens */
+  height: 128px;
   text-align: center; /* Centraliza o conteúdo */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
   display: flex;
@@ -185,29 +194,30 @@ a {
   display: flex;
   position: absolute;
   left: 0px;
-  top: 3000px;
+  top: 2600px;
   flex-direction: column;
   width: 100%;
-  height: 661px;
+  height: 861px;
   background-color: #eaf2fd;
   align-items: center;
+  padding-top: 40px;
+  text-align: center;
 }
 
 .formacao__lista {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  padding-left: 130px;
+  padding-left: 0px;
+  justify-content: space-around;
 }
 
 .formacao__lista li {
-  background-color: #fff; /* Define o fundo branco */
-  border: 1px solid #ccc; /* Adiciona uma borda */
-  padding: 20px; /* Espaçamento interno */
-  width: 296px; /* Define a largura dos itens */
-  height: 118px;
-  text-align: center; /* Centraliza o conteúdo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,22 +226,27 @@ a {
 
 .formacao__titulo {
   width: 100%;
-  padding-left: 350px;
+  padding-left: 0px;
+}
+
+.formacao__elemento {
+  width: 356px;
+  height: 200px;
 }
 
 /*------------------------------ Seção de Projetos --------------------------------*/
 .projetos {
   position: absolute;
   left: 20px;
-  top: 3700px;
+  top: 3550px;
   width: 100%;
-  height: 400px;
+  height: 1000px;
 }
 /*------------------------------ Seção de Contato ---------------------------------*/
 .contato {
   position: absolute;
   left: 0px;
-  top: 4200px;
+  top: 4000px;
   background-color: #eaf2fd;
   width: 100%;
   height: 890px;
@@ -338,6 +353,7 @@ form select {
     width: 622px;
     position: absolute;
     height: 690px;
+    font-size: 16px;
   }
 
   .apresentacao__foto {
@@ -354,14 +370,14 @@ form select {
   .sobre-mim {
     position: absolute;
     left: 0px;
-    top: 800px;
+    top: 450px;
     background-color: #eaf2fd;
     width: 100%;
   }
 
   .sobre-mim__texto {
-    padding-left: 20px;
-    width: 768px;
+    padding-left: 10px;
+    width: 90%;
   }
 
   .sobre-mim__titulo {
@@ -373,7 +389,7 @@ form select {
     display: flex;
     position: absolute;
     left: 0px;
-    top: 1550px;
+    top: 940px;
     flex-direction: column;
     width: 100%;
     height: 244px;
@@ -413,7 +429,7 @@ form select {
     display: flex;
     position: absolute;
     left: 0px;
-    top: 1900px;
+    top: 1400px;
     flex-direction: column;
     width: 100%;
     height: 244px;
@@ -452,31 +468,31 @@ form select {
     display: flex;
     position: absolute;
     left: 0px;
-    top: 2400px;
+    top: 1900px;
     flex-direction: column;
     width: 100%;
-    height: 291px;
+    height: 391px;
     background-color: #eaf2fd;
     align-items: center;
   }
 
   .formacao__lista {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: nowrap;
-    width: 768px;
     text-align: center;
     padding-left: 20px;
+    justify-content: space-around;
   }
 
   .formacao__lista li {
-    background-color: #fff; /* Define o fundo branco */
-    border: 1px solid #ccc; /* Adiciona uma borda */
-    padding: 10px; /* Espaçamento interno */
-    width: 214px; /* Define a largura dos itens */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 214px;
     height: 118px;
-    text-align: left; /* Centraliza o conteúdo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -484,43 +500,48 @@ form select {
   }
 
   .formacao__icone {
-    padding-top: 150px;
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
 
   .formacao__titulo {
+    text-align: center;
     padding-left: 0px;
   }
 
   .formacao__nome {
-    padding: 0;
+    padding-right: 25px;
+    margin: 0px;
+    white-space: nowrap;
   }
 
   .formacao__detalhe {
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
   }
 
   .projetos {
     position: absolute;
     left: 0px;
-    top: 2800px;
+    top: 2400px;
     width: 100%;
     height: 400px;
     padding-left: 0px;
   }
 
   .projetos__conteiner {
-    width: 768px;
-    padding-left: 100px;
+    width: 90%;
+    padding-left: 20px;
   }
 
   .projetos__titulo {
-    padding-left: 100px;
+    padding-left: 20px;
   }
 
   .contato {
     position: absolute;
     left: 0px;
-    top: 3200px;
+    top: 2800px;
     background-color: #eaf2fd;
     width: 100%;
     height: 890px;
@@ -626,18 +647,19 @@ form select {
     left: 0;
     width: 100%;
     margin: 0 auto;
-    padding-left: 0;
+    padding-left: 40px;
   }
 
   .apresentacao__conteiner {
     width: 750px;
     flex: 1;
-    padding-left: 200px;
+    padding-left: 0px;
+    font-size: 20px;
   }
 
   .apresentacao__foto {
-    width: 368px;
-    padding-left: 950px;
+    width: 338px;
+    padding-left: 780px;
     padding-bottom: 200px;
     padding-right: 0;
     margin: 0;
@@ -651,16 +673,16 @@ form select {
     position: absolute;
     left: 0;
     top: 600px;
-    padding-left: 0;
+    padding-left: 40px;
     width: 100%;
   }
 
   .sobre-mim__titulo {
-    padding-left: 200px;
+    padding-left: 0px;
   }
 
   .sobre-mim__texto {
-    padding-left: 200px;
+    padding-left: 0px;
     width: 1136px;
   }
 
@@ -676,6 +698,7 @@ form select {
     top: 1100px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .habilidades__lista li {
@@ -696,7 +719,7 @@ form select {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 10px;
-    width: 1136px;
+    width: 90%;
     text-align: center;
     padding: 0;
   }
@@ -715,6 +738,7 @@ form select {
     top: 1500px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .hobbies__lista li {
@@ -735,7 +759,7 @@ form select {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 10px;
-    width: 1136px;
+    width: 90%;
     text-align: center;
     padding: 0;
   }
@@ -755,7 +779,13 @@ form select {
 
   .formacao__titulo {
     width: 100%;
-    padding-left: 1400px;
+    padding-left: 0px;
+  }
+
+  .formacao__icone {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 172px;
   }
 
   .formacao__lista {
@@ -764,8 +794,9 @@ form select {
     flex-direction: row;
     flex-wrap: nowrap;
     height: 347px;
-    width: 1136px;
+    width: 90%;
     padding-left: 0;
+    justify-content: center;
   }
 
   .formacao__lista li {
@@ -783,41 +814,42 @@ form select {
 
   .projetos {
     position: absolute;
-    top: 2500px;
+    top: 2550px;
     left: 0px;
     width: 100%;
+    height: 400px;
   }
 
   .projetos__titulo {
-    padding-left: 0px;
-    text-align: center;
+    padding-left: 40px;
   }
 
   .projetos__conteiner {
-    padding-left: 0px;
+    padding-left: 40px;
     width: 100%;
-    text-align: center;
   }
 
   .contato {
     position: absolute;
     left: 0px;
-    top: 2850px;
+    top: 2950px;
     width: 100%;
     padding-left: 0px;
   }
 
   .contato__titulo {
-    width: 1440px;
-    padding-left: 330px;
-  }
-
-  .contato__formulario {
-    width: 1400px;
+    width: 100%;
     padding-left: 300px;
   }
 
+  .contato__formulario {
+    width: 80%;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
   .contato__campo {
-    width: 1000px;
+    width: 700px;
   }
 }
