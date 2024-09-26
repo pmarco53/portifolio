@@ -555,12 +555,12 @@ form select {
     height: 890px;
     display: flex;
     flex-direction: column;
-    padding-left: 0px;
+    align-items: center;
   }
 
   .contato__titulo {
     width: 768px;
-    padding-left: 20px;
+    padding-left: 40px;
   }
 
   .contato__formulario {
