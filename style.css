@@ -833,6 +833,10 @@ form select {
     padding-left: 40px;
   }
 
+  .projetos__geral {
+    padding-left: 40px;
+  }
+
   .projetos__conteiner {
     padding-left: 40px;
     width: 100%;
@@ -855,8 +859,6 @@ form select {
   .contato__formulario {
     width: 90%;
     padding-left: 0px;
-    display: flex;
-    justify-content: center;
   }
 
   .contato__campo {
